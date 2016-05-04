@@ -1,0 +1,641 @@
+\documentclass[a4paper,fleqn,usenatbib]{mnras}
+\usepackage{newtxtext,newtxmath}
+%\usepackage{mathptmx}
+%\usepackage{txfonts}
+
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+
+
+%%%%% AUTHORS - PLACE YOUR OWN PACKAGES HERE %%%%%
+
+\usepackage{graphicx}	% Including figure files
+\usepackage{amsmath}	% Advanced maths commands
+\usepackage{amssymb}	% Extra maths symbols
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% AUTHORS - PLACE YOUR OWN COMMANDS HERE %%%%%
+
+% Please keep new commands to a minimum, and use \newcommand not \def to avoid
+% overwriting existing commands. Example:
+%\newcommand{\pcm}{\,cm$^{-2}$}	% per cm-squared
+
+\title[Short title, max. 45 characters]{MNRAS \LaTeXe\ template -- My part}
+
+% The list of authors, and the short list which is used in the headers.
+% If you need two or more lines of authors, add an extra line using \newauthor
+\author[K. T. Smith et al.]{
+Keith T. Smith,$^{1}$\thanks{E-mail: mn@ras.org.uk (KTS)}
+A. N. Other,$^{2}$
+Third Author$^{2,3}$
+and Fourth Author$^{3}$
+\\
+% List of institutions
+$^{1}$Royal Astronomical Society, Burlington House, Piccadilly, London W1J 0BQ, UK\\
+$^{2}$Department, Institution, Street Address, City Postal Code, Country\\
+$^{3}$Another Department, Different Institution, Street Address, City Postal Code, Country
+}
+
+% These dates will be filled out by the publisher
+\date{Accepted XXX. Received YYY; in original form ZZZ}
+
+% Enter the current year, for the copyright statements etc.
+\pubyear{2015}
+
+% Don't change these lines
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
+
+\section{Data}
+The dataset analised was released as part of the third Sloan Digital Sky Survey (SDSS-III) and consists of publicly available data. A sample of 21 lensed Lyman-alpha emitting galaxies were discovered between November 2015 and December 2016 during the BOSS survey. Their redshifts span from 2 to 3 while the lensing objects are massive galaxies, mostly elliptical galaxies, at redshift around 0.55.
+Optical data as the considered sample, can allow us to detect substructures with mass in the range $10^7 - 10^8 M_{\odot}$ given their resolution; lower mass substructures can be detected using interferometric data that can take advantage of a higher resolution.
+The nature of the lensed galaxies is carefully selected to increase our sensitivity to the presence of substructures. Lyman-alpha emitters (LAEs) consist of inhomogeneous distribution of star forming knots and are often composed by distinct (components) units merging into one object. Given their structure, they present an extremely lumpy and discontinuous brightness profile which we can exploit to enhance the capability of identifying a substructure, as follows. Provided that the latter is located in the lens galaxy main halo and in correspondence of the Einstein ring, its presence would lead to a distortion in the brightness distribution of the lensed images. This local brightness perturbation will be more evident the more lumpy is the original unperturbed brightness profile in the same way changes in the positions of bricks in a wall are more easily identified if neighbouring bricks are differently coloured.
+
+The data is processed by means of the method developed by \citet{method}. A recent update has been implemented: the emission coming from the Sersic fitting in each pixel of the lens plane is included in the matrix with the lens potential components and therefore we otimise for both the mass and brightness distribution of the lens galaxy simultaneously.
+
+Each system is analysed in two steps: we first find the best smooth lens model fitting the lens galaxy emission with two or more sersic components. Once the best lens smooth model is found, comprehensive of the lens images and the lens galaxy, we keep it fixed and proceed to locally correct the lens potential to to identify the presence of any substructures, which we detected as local brightness perturbations of the initial model.
+
+The section is structure as follows: for each lens system we present the plots of the smooth models and the correspondent optimised parameters in a recap table. In case any substructure has been detected, we summarise the smooth model in a recap table and only show the plot for the relative detection.
+
+% This section should spread over both columns
+\onecolumn
+\section{SDSSJ0029+2544}
+At a first attempt we obtained a bad fit for the distribution of the light of the lens galaxy in the region of the lens plane we selected with the mask. This is where the lensed images lie and initially the only region of the sky where we imposed the regularisation on the reconstructed source. On the other hand this selection led to noise fitting which was subsequently solved implementing a simultaneous fitting of the mass and the light of the lens galaxy and an active regularisation over all the region of the sky.
+%\begin{figure}
+%	\includegraphics[width=\columnwidth]{/Users/admin/Dropbox/Smooth_models/	filename}
+%    \caption{Smooth model for SDSSJ0029+2544 with plotted critical curves.}
+ %   \label{fig:smooth0029+2544}
+%\end{figure}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised lens parameters for SDSSJ0029+2544.}
+	\label{tab:lens0024+2544}
+	\begin{tabular}{lcccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		b & $\theta$ & f & x & y & qh & $\Gamma_{sh}$ & $\theta_{sh}$ & z \\
+		(arcsec) & ($\circ$) &  & (arcsec) & (arcsec) &  & $\Gamma_{sh}$ & ($\circ$) & \\
+		
+		\hline
+		
+		 &  &  &  &  &  &  &  &  \\
+		 
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised sersic parameters for SDSSJ0029+2544.}
+	\label{tab:sersic0024+2544}
+	\begin{tabular}{lccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		Component & $I_{tot}$ & $R_e$ & n & x & y & $\theta$ & f\\
+		  & $I_{tot}$ & (arcsec) &  & (arcsec) & (arcsec) & ($\circ$) & \\
+		  
+		\hline
+		
+		first &  &  &  &   &  &  & \\
+		second & &  &  &  &  &  & \\
+		
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+
+% This section should spread over both columns
+\section{0113+0250}
+This system presents two lenses, one of which is visible in the top side of the image. The smooth model parameters were accordingly optimised and both the lens galaxies were fitted trough Sersic components. An additional emission is visible in the bottom left part the plot for which both the mass and the light were optimised for.
+
+%\begin{figure}
+%	\includegraphics[width=\columnwidth]{/Users/admin/Dropbox/Smooth_models/filename}
+%    \caption{Smooth model for SDSSJ0113+0250 with plotted critical curves.}
+ %   \label{fig:smooth0113+0250}
+%\end{figure}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised lens parameters for SDSSJ0113+0250. The strength and the position angle of the shear were optimised once for both the lenses.}
+	\label{tab:lens0113+0250}
+	\begin{tabular}{lccccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		 & b & $\theta$ & f & x & y & qh & $\Gamma_{sh}$ & $\theta_{sh}$ & z\\
+		 & (arcsec) & ($\circ$) &  & (arcsec) & (arcsec) &  & $\Gamma_{sh}$ & ($\circ$) & \\
+		 
+		\hline
+		
+		first lens &  &  &  &  &  &  &  &  & \\
+		second lens &  & 8 &  &  &  &  &  &  & \\
+		
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised sersic parameters for 0113+0250.}
+	\label{tab:sersic0113+0250}
+	\begin{tabular}{lcccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		Lens & Component & $I_{tot}$ & $R_e$ & n & x & y & $\theta$ & f\\
+		  & & $I_{tot}$ & (arcsec) &  & (arcsec) & (arcsec) & ($\circ$) & \\
+		  
+		\hline
+		
+		First & I &  &  &  &  &  &  & \\
+		& II &  &  &  &  &  &  & \\
+		& III &  &  &  &  &  &  & \\
+		& IV &  &  &  &  &  &  & \\
+		
+		\hline
+		
+		Second & I &   &  &  &  &  &  & \\
+		& II &  &  &   &  &  &  & \\
+		
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+
+
+
+\section{SDSSJ0237-0641}
+
+%\begin{figure}
+%	\includegraphics[width=\columnwidth]{/Users/admin/Dropbox/Smooth_models/	filename}
+%    \caption{Smooth model for SDSSJ0237-0641 with plotted critical curves.}
+ %   \label{fig:smooth0237-0641}
+%\end{figure}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised lens parameters for SDSSJ0237-0641.}
+	\label{tab:lens0237-0641}
+	\begin{tabular}{lcccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		b & $\theta$ & f & x & y & qh & $\Gamma_{sh}$ & $\theta_{sh}$ & z \\
+		(arcsec) & ($\circ$) &  & (arcsec) & (arcsec) &  & $\Gamma_{sh}$ & ($\circ$) & \\
+		
+		\hline
+		
+		 &  &  &  &  &  &  &  &  \\
+		 
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised sersic parameters for SDSSJ0237-0641.}
+	\label{tab:sersic0237-0641}
+	\begin{tabular}{lccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		Component & $I_{tot}$ & $R_e$ & n & x & y & $\theta$ & f\\
+		  & $I_{tot}$ & (arcsec) &  & (arcsec) & (arcsec) & ($\circ$) & \\
+		  
+		\hline
+		
+		first &  &  &  &   &  &  & \\
+		second & &  &  &  &  &  & \\
+		
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+
+
+\section{SDSSJ0742+3341}
+
+%\begin{figure}
+%	\includegraphics[width=\columnwidth]{/Users/admin/Dropbox/Smooth_models/	filename}
+%    \caption{Smooth model for SDSSJ0742+3341 with plotted critical curves.}
+ %   \label{fig:smooth0742+3341}
+%\end{figure}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised lens parameters for SDSSJ0742+3341.}
+	\label{tab:lens0742+3341}
+	\begin{tabular}{lcccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		b & $\theta$ & f & x & y & qh & $\Gamma_{sh}$ & $\theta_{sh}$ & z \\
+		(arcsec) & ($\circ$) &  & (arcsec) & (arcsec) &  & $\Gamma_{sh}$ & ($\circ$) & \\
+		
+		\hline
+		
+		 &  &  &  &  &  &  &  &  \\
+		 
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised sersic parameters for SDSSJ0742+3341.}
+	\label{tab:sersic0742+3341}
+	\begin{tabular}{lccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		Component & $I_{tot}$ & $R_e$ & n & x & y & $\theta$ & f\\
+		  & $I_{tot}$ & (arcsec) &  & (arcsec) & (arcsec) & ($\circ$) & \\
+		  
+		\hline
+		
+		first &  &  &  &   &  &  & \\
+		second & &  &  &  &  &  & \\
+		
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+\section{SDSSJ0918+4518}
+
+%\begin{figure}
+%	\includegraphics[width=\columnwidth]{/Users/admin/Dropbox/Smooth_models/	filename}
+%    \caption{Smooth model for SDSSJ0918+4518 with plotted critical curves.}
+ %   \label{fig:smooth0918+4518}
+%\end{figure}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised lens parameters for SDSSJ0918+4518.}
+	\label{tab:lens0918+4518}
+	\begin{tabular}{lcccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		b & $\theta$ & f & x & y & qh & $\Gamma_{sh}$ & $\theta_{sh}$ & z \\
+		(arcsec) & ($\circ$) &  & (arcsec) & (arcsec) &  & $\Gamma_{sh}$ & ($\circ$) & \\
+		
+		\hline
+		
+		 &  &  &  &  &  &  &  &  \\
+		 
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised sersic parameters for both the lenses of SDSSJ0918+4518. The strength and the position angle of the shear were optimised once for both the lenses.}
+	\label{tab:sersic0918+4518}
+	\begin{tabular}{lcccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		Lens & Component & $I_{tot}$ & $R_e$ & n & x & y & $\theta$ & f\\
+		  & & $I_{tot}$ & (arcsec) &  & (arcsec) & (arcsec) & ($\circ$) & \\
+		  
+		\hline
+		
+		First & I &  &  &  &  &  &  & \\
+		& II &  &  &  &  &  &  & \\
+		& III &  &  &  &  &  &  & \\
+		& IV &  &  &  &  &  &  & \\
+		
+		\hline
+		
+		Second & I &   &  &  &  &  &  & \\
+		& II &  &  &   &  &  &  & \\
+		
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+
+
+\section{SDSSJ0918+5104}
+The configuration of this system is peculiar. The high value for the shear in table \ref{tab:lens0918+5104} is responsible for the stripping from the original configuration of the counterimage in the bottom right of the plot.
+ 
+ %\begin{figure}
+%	\includegraphics[width=\columnwidth]{/Users/admin/Dropbox/Smooth_models/	filename}
+%    \caption{Smooth model for SDSSJ0918+5104 with plotted critical curves.}
+ %   \label{fig:smooth0918+5104}
+%\end{figure}
+ 
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised lens parameters for SDSSJ0918+5104.}
+	\label{tab:lens0918+5104}
+	\begin{tabular}{lcccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		b & $\theta$ & f & x & y & qh & $\Gamma_{sh}$ & $\theta_{sh}$ & z \\
+		(arcsec) & ($\circ$) &  & (arcsec) & (arcsec) &  & $\Gamma_{sh}$ & ($\circ$) & \\
+		
+		\hline
+		
+		 &  &  &  &  &  &  &  &  \\
+		 
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised sersic parameters for SDSSJ0918+5104.}
+	\label{tab:sersic0918+5104}
+	\begin{tabular}{lccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		Component & $I_{tot}$ & $R_e$ & n & x & y & $\theta$ & f\\
+		  & $I_{tot}$ & (arcsec) &  & (arcsec) & (arcsec) & ($\circ$) & \\
+		  
+		\hline
+		
+		first &  &  &  &   &  &  & \\
+		second & &  &  &  &  &  & \\
+		
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+
+\section{SDSSJ1201+4743}
+
+ %\begin{figure}
+%	\includegraphics[width=\columnwidth]{/Users/admin/Dropbox/Smooth_models/	filename}
+%    \caption{Smooth model for SDSSJ1201+4743 with plotted critical curves.}
+ %   \label{fig:smooth1201+4743}
+%\end{figure}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised lens parameters for SDSSJ1201+4743.}
+	\label{tab:lens1201+4743}
+	\begin{tabular}{lcccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		b & $\theta$ & f & x & y & qh & $\Gamma_{sh}$ & $\theta_{sh}$ & z \\
+		(arcsec) & ($\circ$) &  & (arcsec) & (arcsec) &  & $\Gamma_{sh}$ & ($\circ$) & \\
+		
+		\hline
+		
+		 &  &  &  &  &  &  &  &  \\
+		 
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised sersic parameters for SDSSJ1201+4743.}
+	\label{tab:sersic1201+4743}
+	\begin{tabular}{lccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		Component & $I_{tot}$ & $R_e$ & n & x & y & $\theta$ & f\\
+		  & $I_{tot}$ & (arcsec) &  & (arcsec) & (arcsec) & ($\circ$) & \\
+		  
+		\hline
+		
+		first &  &  &  &   &  &  & \\
+		second & &  &  &  &  &  & \\
+		
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+\section{SDSSJ2342-0120}
+
+ %\begin{figure}
+%	\includegraphics[width=\columnwidth]{/Users/admin/Dropbox/Smooth_models/	filename}
+%    \caption{Smooth model for SDSSJ2342-0120 with plotted critical curves.}
+ %   \label{fig:smooth2342-0120}
+%\end{figure}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised lens parameters for SDSSJ2342-0120.}
+	\label{tab:lens2342-0120}
+	\begin{tabular}{lcccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		b & $\theta$ & f & x & y & qh & $\Gamma_{sh}$ & $\theta_{sh}$ & z \\
+		(arcsec) & ($\circ$) &  & (arcsec) & (arcsec) &  & $\Gamma_{sh}$ & ($\circ$) & \\
+		
+		\hline
+		
+		 &  &  &  &  &  &  &  &  \\
+		 
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised sersic parameters for SDSSJ2342-0120.}
+	\label{tab:sersic2342-0120}
+	\begin{tabular}{lccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		Component & $I_{tot}$ & $R_e$ & n & x & y & $\theta$ & f\\
+		  & $I_{tot}$ & (arcsec) &  & (arcsec) & (arcsec) & ($\circ$) & \\
+		  
+		\hline
+		
+		first &  &  &  &   &  &  & \\
+		second & &  &  &  &  &  & \\
+		
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+\section{SDSSJ1110+2808}
+
+ %\begin{figure}
+%	\includegraphics[width=\columnwidth]{/Users/admin/Dropbox/Smooth_models/	filename}
+%    \caption{Smooth model for SDSSJ1110+2808 with plotted critical curves.}
+ %   \label{fig:smooth1110+2808}
+%\end{figure}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised lens parameters for SDSSJ1110+2808.}
+	\label{tab:lens1110+2808}
+	\begin{tabular}{lcccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		b & $\theta$ & f & x & y & qh & $\Gamma_{sh}$ & $\theta_{sh}$ & z \\
+		(arcsec) & ($\circ$) &  & (arcsec) & (arcsec) &  & $\Gamma_{sh}$ & ($\circ$) & \\
+		
+		\hline
+		
+		 &  &  &  &  &  &  &  &  \\
+		 
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised sersic parameters for SDSSJ1110+2808.}
+	\label{tab:sersic1110+2808}
+	\begin{tabular}{lccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		Component & $I_{tot}$ & $R_e$ & n & x & y & $\theta$ & f\\
+		  & $I_{tot}$ & (arcsec) &  & (arcsec) & (arcsec) & ($\circ$) & \\
+		  
+		\hline
+		
+		first &  &  &  &   &  &  & \\
+		second & &  &  &  &  &  & \\
+		
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+
+\section{SDSSJ1110+3649}
+
+ %\begin{figure}
+%	\includegraphics[width=\columnwidth]{/Users/admin/Dropbox/Smooth_models/	filename}
+%    \caption{Smooth model for SDSSJ1110+3649 with plotted critical curves.}
+ %   \label{fig:smooth1110+36498}
+%\end{figure}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised lens parameters for SDSSJ1110+3649.}
+	\label{tab:lens1110+3649}
+	\begin{tabular}{lcccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		b & $\theta$ & f & x & y & qh & $\Gamma_{sh}$ & $\theta_{sh}$ & z \\
+		(arcsec) & ($\circ$) &  & (arcsec) & (arcsec) &  & $\Gamma_{sh}$ & ($\circ$) & \\
+		
+		\hline
+		
+		 &  &  &  &  &  &  &  &  \\
+		 
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+\begin{table}
+\resizebox{\textwidth}{!}{\begin{minipage}{\textwidth}
+	\centering
+	\caption{Optimised sersic parameters for SDSSJ1110+3649.}
+	\label{tab:sersic1110+3649}
+	\begin{tabular}{lccccccr} % four columns, alignment for each
+	
+		\hline
+		
+		Component & $I_{tot}$ & $R_e$ & n & x & y & $\theta$ & f\\
+		  & $I_{tot}$ & (arcsec) &  & (arcsec) & (arcsec) & ($\circ$) & \\
+		  
+		\hline
+		
+		first &  &  &  &   &  &  & \\
+		second & &  &  &  &  &  & \\
+		
+		\hline
+		
+	\end{tabular}
+\end{minipage} }
+\end{table}
+
+
+
+
+
+
+
+\begin{thebibliography}{99}
+\bibitem[\protect\citeauthoryear{Vegetti \& Koopmans}{2009}]{method} 
+S. Vegetti, L. V. E. Koopmans, 2009, MNRAS, 392, 945
+\end{thebibliography}
+
+\end{document}
