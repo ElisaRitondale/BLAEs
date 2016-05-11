@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2014.5.25)  10 MAY 2016 10:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2014.5.25)  11 MAY 2016 10:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -913,54 +913,55 @@ LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
 (Font)              size <5> substituted on input line 52.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-
- []
-
 LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
-(Font)              scaled to size 9.0pt on input line 70.
+(Font)              scaled to size 10.0pt on input line 57.
 LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 70.
+(Font)              scaled to size 7.3pt on input line 57.
+LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
+(Font)              scaled to size 9.0pt on input line 67.
 
-Underfull \hbox (badness 4846) in paragraph at lines 74--76
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 73.
+
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 73.
+LaTeX Font Info:    No file TS1aer.fd. on input line 73.
+
+LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
+(Font)              using `TS1/cmr/m/n' instead
+(Font)              for symbol `textcopyright' on input line 73.
+
+[1
+
+
+]
+Underfull \hbox (badness 4846) in paragraph at lines 75--77
 \T1/aer/m/n/9 The lens mod-elling of each sys-tem was per-formed
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 74--76
+Underfull \hbox (badness 2564) in paragraph at lines 75--77
 \T1/aer/m/n/9 us-ing the Bayesian pix-e-lated tech-nique de-vel-oped by
  []
 
 (./Texpaper.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 677.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 678.
 
 
-LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 677.
+LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 678.
 
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 677.
-
-LaTeX Font Info:    No file TS1aer.fd. on input line 677.
-
-LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textcopyright' on input line 677.
-
-[1
-
+[2
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 677.
+LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 678.
 
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 677.
+[3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 678.
  (./Texpaper.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 677.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 677.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 678.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 678.
 Package rerunfilecheck Info: File `Texpaper.out' has not changed.
 (rerunfilecheck)             Checksum: 4EFF6755685F15CE46272C3717236869;222.
 
@@ -977,17 +978,17 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 677.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 678.
  )
-(\end occurred when \iftrue on line 101 was incomplete)
-(\end occurred when \iftrue on line 88 was incomplete) 
+(\end occurred when \iftrue on line 102 was incomplete)
+(\end occurred when \iftrue on line 89 was incomplete) 
 Here is how much of TeX's memory you used:
- 8920 strings out of 493118
- 124579 string characters out of 6135459
- 214727 words of memory out of 5000000
- 12224 multiletter control sequences out of 15000+600000
- 64269 words of font info for 112 fonts, out of 8000000 for 9000
+ 8936 strings out of 493118
+ 124783 string characters out of 6135459
+ 216796 words of memory out of 5000000
+ 12237 multiletter control sequences out of 15000+600000
+ 73996 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,16n,34p,938b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,16n,34p,1708b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Texpaper.dvi (2 pages, 13200 bytes).
+Output written on Texpaper.dvi (3 pages, 18460 bytes).
