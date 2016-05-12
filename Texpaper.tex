@@ -73,7 +73,19 @@ The nature of the lensed galaxies is carefully selected to increase our sensitiv
 
 \section{Lens modelling}
 The lens modelling of each system was performed using the Bayesian pixelated technique developed by \citet{V09} \citep[see also][]{V14a}.
-The mass density distribution of the lens is parametrised with an elliptical power-law profile (plus external shear) with a total of eight free parameters. The surface brightness distribution of the lens is parametrised using elliptical Sersic profiles and it is simultaneously modelled with the lens mass distribution. The surface brightness distribution on the un-lensed background source is instead reconstructed using an adaptive Delaunay tessellation.
+The mass density distribution of the lens is parametrised with an elliptical power-law profile (plus external shear) with a total of eight free parameters, where the dimentionless surface density and the Einstein radius are defined as in equations \ref{massdensity} and \ref{einsteinradius}.
+
+\begin{equation}\label{massdensity}
+k\left ( x,y \right ) = \frac{k_0 \left ( 2 - \frac{\gamma}{2} \right ) q^{\gamma - 3/2}}{2 \left ( q^2 \left ( x^2 + r_c^2 \right ) + y^2\right )^{\left ( \gamma - 1 \right )/2}} 
+\end{equation}
+
+\begin{equation}\label{einsteinradius}
+$R_{ein} = \left ( \frac{k_0 \left ( 2 - \frac{\gamma}{2} \right ) q^{\left ( \gamma - 2 \right )/2}}{3 - \gamma} \right )^{1/\left ( \gamma - 1 \right )}$
+
+\end{equation}
+
+The surface brightness distribution of the lens is parametrised using elliptical Sersic profiles and it is simultaneously modelled with the lens mass distribution. The surface brightness distribution on the un-lensed background source is instead reconstructed using an adaptive Delaunay tessellation. 
+We attempt for the first time a different modelling procedure. In previous works the emission from the lens galaxy was fitted for and susbequently subtracted from the original data, not to be considered further in the following modelling. In this work we use an opposite strategy in two steps. We first mask out the emission from the lens galaxy to preceed with the modelling of the lensed images to find the best preliminary lens model. We then use this as a fix starting model while we parametrise the surface brightness of the lens galaxy as a sum of elliptical Sersic profiles. In the third and last step we optimise simultaneously for the mass and the light distribution of the deflector.
 
 
 \begin{table*}
@@ -102,6 +114,7 @@ The mass density distribution of the lens is parametrised with an elliptical pow
 \end{table*}
 
 \section{Results}
+%As can be seen in figure \ref{plots}, some of our models present quite a few residuals in correspondence of the lens galaxy. This is due to the attempt we are making to fit a pixelated emission with an analytical profile and in some cases the lens brightness profile
 
 \section{Discussion}
 %A recent update has been implemented: the emission coming from the Sersic fitting in each pixel of the lens plane is included in the matrix with the lens potential components and therefore we otimise for both the mass and brightness distribution of the lens galaxy simultaneously.
