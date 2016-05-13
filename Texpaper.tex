@@ -64,7 +64,7 @@ gravitational lensing -- galaxies: structure
 
 
 \section{Introduction}
-Lyman-alpha emitting galaxies (LAEs) represent a population of star-forming systems with very large Ly$\alpha$ equivalent widths and some of the highest specific star-formation rates (sSFR) in the Universe, and these low-mass galaxies are thought to be predominantly responsible for the reionisation of the Universe. However, it is extremely difficult to characterise these galaxies in detail because they are intrinsically very faint. Typical LAE galaxies have strong star-formation, high-ionisations, and are typically low metallicity; these properties, combined with a (mostly) low dust content, allow for the escape of a large fraction of Ly$\alpha$ photons. At redshift  $2 < z < 3$, well-studied LAEs are typically at the bright end of this parameter space, being  L$_\text{*}$ galaxies with M$_\text{*} \sim$ 109 M$_\odot$ and typical SFRs of about 30 to 100 M$_\odot$/yr (e.g. Erb et al. 2016), and investigations of lower-SFR objects have generally been limited to quantifying the properties of strong optical lines (e.g. Trainor et al. 2015). For example, Hagen et al. (2016) have recently shown that low-SFR LAEs (M$_\text{*}$ as low as 107 M$_\odot$ and SFR $\sim$ 1 to 100 M$_\odot$/yr, consistent with local-Universe \emph{green pea} LAEs, e.g., Henry et al. 2015) have optical strong line (H$_\alpha$ and [O iii]) properties consistent with optically-selected star-forming galaxies of the same masses at z $\sim$ 2, but they are unable to directly determine the properties of these galaxies that may affect the UV escape fraction, including the gas metallicity, density, and kinematics, without additional very large investments in telescope time.
+Lyman-alpha emitting galaxies (LAEs) represent a population of star-forming systems with very large Ly$\alpha$ equivalent widths and some of the highest specific star-formation rates (sSFR) in the Universe, and these low-mass galaxies are thought to be predominantly responsible for the reionisation of the Universe. However, it is extremely difficult to characterise these galaxies in detail because they are intrinsically very faint. Typical LAE galaxies have strong star-formation, high-ionisations, and are typically low metallicity; these properties, combined with a (mostly) low dust content, allow for the escape of a large fraction of Ly$\alpha$ photons. At redshift  $2 < z < 3$, well-studied LAEs are typically at the bright end of this parameter space, being  L$_\text{*}$ galaxies with M$_\text{*} \sim$ 109 M$_\odot$ and typical SFRs of about 30 to 100 M$_\odot$/yr (e.g. Erb et al. 2016), and investigations of lower-SFR objects have generally been limited to quantifying the properties of strong optical lines (e.g. Trainor et al. 2015). For example, Hagen et al. (2016) have recently shown that low-SFR LAEs (M$_\text{*}$ as low as 10$^7$ M$_\odot$ and SFR $\sim$ 1 to 100 M$_\odot$/yr, consistent with local-Universe \emph{green pea} LAEs, e.g., Henry et al. 2015) have optical strong line (H$_\alpha$ and [O iii]) properties consistent with optically-selected star-forming galaxies of the same masses at z $\sim$ 2, but they are unable to directly determine the properties of these galaxies that may affect the UV escape fraction, including the gas metallicity, density, and kinematics, without additional very large investments in telescope time.
 Strong gravitational lensing can be used to overcome this limitation, but the difficulty is that most strongly lensed galaxies at z $\sim$ 2 are not LAEs, and at present the properties of only three lensed LAEs have been investigated in detail (Christensen et al. 2012; Vanzella et al. 2016). Fortunately, new HST V -band observations of LAE galaxies selected from the BOSS survey have revealed a sample of strongly lensed systems at  $\langle z\rangle \sim$ 2.5 for which the magnification effect could reveal the detailed structure of these LAEs at scales around 100 pcs. Our subsequent lens modelling shows that the typical lensing magnification of these objects is $\mu \sim$ 20 and, after accounting for this magnification, these objects are compact galaxies with SFRs of $\sim$ 12 M$_\odot$/yr (i.e., a factor of 3 to 8 lower than previous detailed studies).
 
 \section{Data}
@@ -84,17 +84,19 @@ Briefly, the mass density distribution of the lens is parametrised with an ellip
 the dimensionless surface mass density and the Einstein radius are related to each other as
 
 \begin{equation}\label{einsteinradius}
-R_{\rm{ein}} = \left ( \frac{\kappa_0 \left ( 2 - \frac{\gamma}{2} \right ) q^{\left ( \gamma - 2 \right )/2}}{3 - \gamma} \right )^{1/\left ( \gamma - 1 \right )}
+R_{\rm{ein}} = \left ( \frac{\kappa_0 \left ( 2 - \frac{\gamma}{2} \right ) q^{\left ( \gamma - 2 \right )/2}}{3 - \gamma} \right )^{1/\left ( \gamma - 1 \right )}\,.
 \end{equation}
 
-The surface brightness distribution of the lens is simultaneously modelled with the lens mass distribution and is parametrised using elliptical Sersic profiles as in equation . 
+The surface brightness distribution of the lens is simultaneously modelled with the lens mass distribution and is parametrised using elliptical Sersic profiles 
 
 \begin{equation}
-I \left ( r \right ) = I_0 exp \left [  \left (  - bn  \left (  \frac{r}{R_e} \right ) ^ {1/n} \right )  - 1.0   \right ]
+I \left ( r \right ) = I_0 exp \left [  \left (  - bn  \left (  \frac{r}{R_e} \right ) ^ {1/n} \right )  - 1.0   \right ]\,,
 \end{equation}
 
+with
+
 \begin{equation}
-r = \sqrt{q_l  x_l ^2 + y_l ^2}
+r = \sqrt{q_l^2  x_l ^2 + y_l ^2}\,.
 \end{equation}
 
 The surface brightness distribution of the un-lensed background source is instead reconstructed using a magnification-adaptive Delaunay tessellation and is characterised by a form and level of regularisation,  $\mathbf{R_s}$ and $\lambda_s$ \citep[see][for a more detailed description]{V09,V14a}.  In particular, the modelling procedure is performed in two steps: first we mask out the emission from the lens galaxy and, given the lensed surface brightness distribution $\bmath d$, we optimise for the lens mass parameters $\bmath \eta = \{\kappa_0,\theta,q,x,y,\gamma,\Gamma,\Gamma_{\theta}\}$ and source regularisation level by maximising the following posterior probability density 
@@ -119,9 +121,25 @@ Then, we use this as a fix starting point to parametrise the surface brightness 
 \caption{Add caption here.}
 \begin{tabular}{cccc}
 \hline
- Name (SDSS) &$\rm{z_{lens}}$&$\rm{z_{src}}$&$\rm{R_{ein}}$\\
+ Name (SDSS) &$\rm{z_{lens}}$&$\rm{z_{src}}$&$\rm{R_{ein}}$[arcsec]\\
  \hline
-
+$\rm{J0029+2544}$&0.587&2.450\\
+$\rm{J0113+0250}$&0.623&2.609\\
+$\rm{J0201+3228}$&0.396&2.821\\
+$\rm{J0237-0641}$&0.486&2.249\\
+$\rm{J0742+3341}$&0.494&2.363\\
+$\rm{J0755+3445}$&0.722&2.634\\
+$\rm{J0856+2010}$&0.507&2.233\\
+$\rm{J0918+4518}$&0.524&2.344\\
+$\rm{J0918+5104}$&0.581&2.403\\
+$\rm{J1110+2808}$&0.607&2.399\\
+$\rm{J1110+3649}$&0.733&2.502\\
+$\rm{J1141+2216}$&0.586&2.762\\
+$\rm{J1201+4743}$&0.563&2.126\\
+$\rm{J1226+5457}$&0.498&2.732\\
+$\rm{J1529+4015}$&0.531&2.792\\
+$\rm{J2228+1205}$&0.530&2.832\\
+$\rm{J2342-0120}$&0.527&2.265\\
  \hline
 \end{tabular}
 \label{tbl:list} 
@@ -144,6 +162,16 @@ Then, we use this as a fix starting point to parametrise the surface brightness 
 %As can be seen in figure \ref{plots}, some of our models present quite a few residuals in correspondence of the lens galaxy. This is due to the attempt we are making to fit a pixelated emission with an analytical profile and in some cases the lens brightness profile is not well approximated by a Sersic profile. For these systems the lens brightness distribution is fitted with a B-spline profile and subtracted from the data. The obtained images are modelled again to prove that the bad fitting of the Sersic is not compromising the goodness of our lens model.
 %
 %Furthermore our prior on the source regularisation changes according to the specific system. In some cases a correlation between the pixels is needed in the regin outside the mask to achieve a better modelling: the regularisation matrix is therefore no longer diagonal.
+
+\begin{figure*}
+\begin{center} 
+\includegraphics[width = 16 cm]{fig1a.ps}
+\includegraphics[width = 16 cm]{fig1a.ps}
+\caption{From top to bottom: best models for the lens gravitational systems ..... From left to right: input data, reconstructed model, normalised image residuals and reconstructed source.}
+\label{fig:J0252_smooth}
+\end{center}     
+ \end{figure*}
+
 
 \section{Discussion}
 %A recent update has been implemented: the emission coming from the Sersic fitting in each pixel of the lens plane is included in the matrix with the lens potential components and therefore we otimise for both the mass and brightness distribution of the lens galaxy simultaneously.
