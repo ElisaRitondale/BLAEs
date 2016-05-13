@@ -84,10 +84,20 @@ The mass density distribution of the lens is parametrised with an elliptical pow
 the dimensionless surface mass density and the Einstein radius are related to each other as
 
 \begin{equation}\label{einsteinradius}
-R_{\rm{ein}} = \left ( \frac{\kappa_0 \left ( 2 - \frac{\gamma}{2} \right ) q^{\left ( \gamma - 2 \right )/2}}{3 - \gamma} \right )^{1/\left ( \gamma - 1 \right )}\,.
+R_{\rm{ein}} = \left ( \frac{\kappa_0 \left ( 2 - \frac{\gamma}{2} \right ) q^{\left ( \gamma - 2 \right )/2}}{3 - \gamma} \right )^{1/\left ( \gamma - 1 \right )}
 \end{equation}
 
-The surface brightness distribution of the lens is parametrised using elliptical Sersic profiles and it is simultaneously modelled with the lens mass distribution. The surface brightness distribution of the un-lensed background source is instead reconstructed using a magnification-adaptive Delaunay tessellation and is characterised by a form and level of regularisation,  $\mathbf{R_s}$ and $\lambda_s$ \citep[see][for a more detailed description]{V09,V14a}.  In particular, the modelling procedure is performed in two steps: first we mask out the emission from the lens galaxy and, given the lensed surface brightness distribution $\bmath d$, we optimise for the lens mass parameters $\bmath \eta = \{\kappa_0,\theta,q,x,y,\gamma,\Gamma,\Gamma_{\theta}\}$ and source regularisation level by maximising the following posterior probability density 
+The surface brightness distribution of the lens is simultaneously modelled with the lens mass distribution and is parametrised using elliptical Sersic profiles as in equation . 
+
+\begin{equation}
+I \left ( r \right ) = I_0 exp \left [  \left (  - bn  \left (  \frac{r}{R_e} \right ) ^ {1/n} \right )  - 1.0   \right ]
+\end{equation}
+
+\begin{equation}
+r = \sqrt{q_l  x_l ^2 + y_l ^2}
+\end{equation}
+
+The surface brightness distribution of the un-lensed background source is instead reconstructed using a magnification-adaptive Delaunay tessellation and is characterised by a form and level of regularisation,  $\mathbf{R_s}$ and $\lambda_s$ \citep[see][for a more detailed description]{V09,V14a}.  In particular, the modelling procedure is performed in two steps: first we mask out the emission from the lens galaxy and, given the lensed surface brightness distribution $\bmath d$, we optimise for the lens mass parameters $\bmath \eta = \{\kappa_0,\theta,q,x,y,\gamma,\Gamma,\Gamma_{\theta}\}$ and source regularisation level by maximising the following posterior probability density 
 
 \begin{equation}\label{equ:posterior}
     P(\lambda_{\rm{s}},\bmath \eta\,|\,\bmath d,\mathbf
