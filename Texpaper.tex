@@ -75,7 +75,7 @@ The dataset analysed was released as part of the third Sloan Digital Sky Survey 
 
 \section{Lens modelling}
 The lens modelling of each system was performed using the Bayesian pixelated technique developed by \citet{V09}.
-The mass density distribution of the lens is parametrised with an elliptical power-law profile (plus external shear) with a total of eight free parameters,
+Briefly, the mass density distribution of the lens is parametrised with an elliptical power-law profile (plus external shear) with a total of eight free parameters,
 
 \begin{equation}\label{massdensity}
 \kappa\left ( x,y \right ) = \frac{k_0 \left ( 2 - \frac{\gamma}{2} \right ) q^{\gamma - 3/2}}{2 \left ( q^2 \left ( x^2 + r_c^2 \right ) + y^2\right )^{\left ( \gamma - 1 \right )/2}}\,, 
@@ -113,15 +113,7 @@ At each step of this optimisation the corresponding most probable source $\bmath
    \label{eq:evidence} 
  \end{equation}
 
-Then, we use this as a fix starting point to parametrise the surface brightness of the lens galaxy as a sum of two or more elliptical Sersic profiles and optimize for the best parameters. In the third and last step we optimise simultaneously for the mass and the light distribution of the deflector found in the previous steps.
-
-
-
- In this work we use an opposite strategy which develops in two steps. 
-
-We attempt for the first time a different modelling procedure. In previous works the emission from the lens galaxy was fitted for and subsequently subtracted from the original data, not to be considered further in the following modelling. In this work we use an opposite strategy in two steps. We first mask out the emission from the lens galaxy to proceed with the modelling of the lensed images to find the best preliminary lens model. We then use this as a fix starting model while we parametrise the surface brightness of the lens galaxy as a sum of elliptical Sersic profiles. In the third and last step we optimise simultaneously for the mass and the light distribution of the deflector.
-
-The lens modelling of each system was performed using the Bayesian pixelated technique developed by \citet{V09} \citep[see also][]{V14a} and we refer to this paper for a more detailed discussion. Briefly, the mass density distribution of the lens is parametrised with an elliptical power-law profile (plus external shear) with a total of eight free parameters. The surface brightness distribution of the lens is parametrised using elliptical Sersic profiles and unlike in \citet{V09}  it is simultaneously modelled with the lens mass distribution. The surface brightness distribution on the un-lensed background source is instead reconstructed using a Delaunay tessellation which is adaptive with the magnification.
+Then, we use this as a fix starting point to parametrise the surface brightness of the lens galaxy as a sum of two or more elliptical Sersic profiles and optimise for the corresponding  parameters, $\bmath \eta_l =\{....\}$ together with the background source surface brightness distribution. In the third and last step we optimise simultaneously for the mass and the light distribution of the deflector and the source regularisation level.
 
 \begin{table*}
 \caption{Add caption here.}
@@ -149,11 +141,9 @@ The lens modelling of each system was performed using the Bayesian pixelated tec
 \end{table*}
 
 \section{Results}
-As can be seen in figure \ref{plots}, some of our models present quite a few residuals in correspondence of the lens galaxy. This is due to the attempt we are making to fit a pixelated emission with an analytical profile and in some cases the lens brightness profile is not well approximated by a Sersic profile. For these systems the lens brightness distribution is fitted with a B-spline profile and subtracted from the data. The obtained images are modelled again to prove that the bad fitting of the Sersic is not compromising the goodness of our lens model.
-
-Furthermore our prior on the source regularisation changes according to the specific system. In some cases a correlation between the pixels is needed in the regin outside the mask to achieve a better modelling: the regularisation matrix is therefore no longer diagonal.
-
-\section{ccc}
+%As can be seen in figure \ref{plots}, some of our models present quite a few residuals in correspondence of the lens galaxy. This is due to the attempt we are making to fit a pixelated emission with an analytical profile and in some cases the lens brightness profile is not well approximated by a Sersic profile. For these systems the lens brightness distribution is fitted with a B-spline profile and subtracted from the data. The obtained images are modelled again to prove that the bad fitting of the Sersic is not compromising the goodness of our lens model.
+%
+%Furthermore our prior on the source regularisation changes according to the specific system. In some cases a correlation between the pixels is needed in the regin outside the mask to achieve a better modelling: the regularisation matrix is therefore no longer diagonal.
 
 \section{Discussion}
 %A recent update has been implemented: the emission coming from the Sersic fitting in each pixel of the lens plane is included in the matrix with the lens potential components and therefore we otimise for both the mass and brightness distribution of the lens galaxy simultaneously.
