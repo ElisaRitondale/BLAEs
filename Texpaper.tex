@@ -68,26 +68,50 @@ Lyman-alpha emitting galaxies (LAEs) represent a population of star-forming syst
 Strong gravitational lensing can be used to overcome this limitation, but the difficulty is that most strongly lensed galaxies at z $\sim$ 2 are not LAEs, and at present the properties of only three lensed LAEs have been investigated in detail (Christensen et al. 2012; Vanzella et al. 2016). Fortunately, new HST V -band observations of LAE galaxies selected from the BOSS survey have revealed a sample of strongly lensed systems at  $\langle z\rangle \sim$ 2.5 for which the magnification effect could reveal the detailed structure of these LAEs at scales around 100 pcs. Our subsequent lens modelling shows that the typical lensing magnification of these objects is $\mu \sim$ 20 and, after accounting for this magnification, these objects are compact galaxies with SFRs of $\sim$ 12 M$_\odot$/yr (i.e., a factor of 3 to 8 lower than previous detailed studies).
 
 \section{Data}
-The dataset analised was released as part of the third Sloan Digital Sky Survey (SDSS-III) and consists of publicly available data. A sample of 21 lensed Lyman-alpha emitting galaxies were discovered between November 2015 and December 2016 during the BOSS survey. Their redshifts span from 2 to 3 while the lensing objects are massive galaxies, mostly elliptical galaxies, at redshift around 0.55. Out of the 21 lans candidates SDSSJ0054+2944, SDSSJ1116+0915, SDSSJ1516+4954 are not lenses and SDSSJ2245+0040 is not considered in the our homogeneous because of the uncertain structure of the deflector, which appears to be a spiral galaxy.
+The dataset analysed was released as part of the third Sloan Digital Sky Survey (SDSS-III) and consists of publicly available data. A sample of 21 lensed Lyman-alpha emitting galaxies were discovered between November 2015 and December 2016 during the BOSS survey. Their redshifts span from z $\sim$ 2 to 3 while the lensing objects are mostly massive early-type galaxies, at redshift around 0.55. Out of the 21 lens candidates SDSSJ0054+2944, SDSSJ1116+0915 and SDSSJ1516+4954 turned out not to be lenses, while SDSSJ2245+0040 is not included in our final sample because of the uncertain nature of the deflector, which appears to be a spiral galaxy.
 
-Optical data as the considered sample, can allow us to detect substructures with mass in the range $10^7 - 10^8 M_{\odot}$ given their resolution; lower mass substructures can be detected using interferometric data that can take advantage of a higher resolution.
-The nature of the lensed galaxies is carefully selected to increase our sensitivity to the presence of substructures. Lyman-alpha emitters (LAEs) consist of inhomogeneous distribution of star forming knots and are often composed by distinct (components) units merging into one object. Given their structure, they present an extremely lumpy and discontinuous brightness profile which we can exploit to enhance the capability of identifying a substructure, as follows. Provided that the latter is located in the lens galaxy main halo and in correspondence of the Einstein ring, its presence would lead to a distortion in the brightness distribution of the lensed images. This local brightness perturbation will be more evident the more lumpy is the original unperturbed brightness profile in the same way changes in the positions of bricks in a wall are more easily identified if neighbouring bricks are differently coloured.
+%Optical data as the considered sample, can allow us to detect substructures with mass in the range $10^7 - 10^8 M_{\odot}$ given their resolution; lower mass substructures can be detected using interferometric data that can take advantage of a higher resolution.
+%The nature of the lensed galaxies is carefully selected to increase our sensitivity to the presence of substructures. Lyman-alpha emitters (LAEs) consist of inhomogeneous distribution of star forming knots and are often composed by distinct (components) units merging into one object. Given their structure, they present an extremely lumpy and discontinuous brightness profile which we can exploit to enhance the capability of identifying a substructure, as follows. Provided that the latter is located in the lens galaxy main halo and in correspondence of the Einstein ring, its presence would lead to a distortion in the brightness distribution of the lensed images. This local brightness perturbation will be more evident the more lumpy is the original unperturbed brightness profile in the same way changes in the positions of bricks in a wall are more easily identified if neighbouring bricks are differently coloured.
 
 \section{Lens modelling}
-The lens modelling of each system was performed using the Bayesian pixelated technique developed by \citet{V09} \citep[see also][]{V14a}.
-The mass density distribution of the lens is parametrised with an elliptical power-law profile (plus external shear) with a total of eight free parameters, where the dimentionless surface density and the Einstein radius are defined as in equations \ref{massdensity} and \ref{einsteinradius} \citep[see also][]{Vegetal14}.
+The lens modelling of each system was performed using the Bayesian pixelated technique developed by \citet{V09}.
+The mass density distribution of the lens is parametrised with an elliptical power-law profile (plus external shear) with a total of eight free parameters,
 
 \begin{equation}\label{massdensity}
-k\left ( x,y \right ) = \frac{k_0 \left ( 2 - \frac{\gamma}{2} \right ) q^{\gamma - 3/2}}{2 \left ( q^2 \left ( x^2 + r_c^2 \right ) + y^2\right )^{\left ( \gamma - 1 \right )/2}} 
+\kappa\left ( x,y \right ) = \frac{k_0 \left ( 2 - \frac{\gamma}{2} \right ) q^{\gamma - 3/2}}{2 \left ( q^2 \left ( x^2 + r_c^2 \right ) + y^2\right )^{\left ( \gamma - 1 \right )/2}}\,, 
 \end{equation}
+
+the dimensionless surface mass density and the Einstein radius are related to each other as
 
 \begin{equation}\label{einsteinradius}
-$R_{ein} = \left ( \frac{k_0 \left ( 2 - \frac{\gamma}{2} \right ) q^{\left ( \gamma - 2 \right )/2}}{3 - \gamma} \right )^{1/\left ( \gamma - 1 \right )}$
+R_{\rm{ein}} = \left ( \frac{\kappa_0 \left ( 2 - \frac{\gamma}{2} \right ) q^{\left ( \gamma - 2 \right )/2}}{3 - \gamma} \right )^{1/\left ( \gamma - 1 \right )}\,.
 \end{equation}
 
-The surface brightness distribution of the lens is parametrised using elliptical Sersic profiles and it is simultaneously modelled with the lens mass distribution. The surface brightness distribution on the un-lensed background source is instead reconstructed using an adaptive Delaunay tessellation. 
-We attempt for the first time a different modelling procedure. In previous works the emission from the lens galaxy was fitted for and susbequently subtracted from the original data, not to be considered further in the following modelling procedure. In this work we use an opposite strategy which develops in two steps. We first mask out the emission from the lens galaxy to find the best preliminary model for the lens mass distrinution. We then use this as a fix starting point to parametrise the surface brightness of the lens galaxy as a sum of two or more elliptical Sersic profiles and optimize for the best parameters. In the third and last step we optimise simultaneously for the mass and the light distribution of the deflector found in the previous steps.
+The surface brightness distribution of the lens is parametrised using elliptical Sersic profiles and it is simultaneously modelled with the lens mass distribution. The surface brightness distribution of the un-lensed background source is instead reconstructed using a magnification-adaptive Delaunay tessellation and is characterised by a form and level of regularisation,  $\mathbf{R_s}$ and $\lambda_s$ \citep[see][for a more detailed description]{V09,V14a}.  In particular, the modelling procedure is performed in two steps: first we mask out the emission from the lens galaxy and, given the lensed surface brightness distribution $\bmath d$, we optimise for the lens mass parameters $\bmath \eta = \{\kappa_0,\theta,q,x,y,\gamma,\Gamma,\Gamma_{\theta}\}$ and source regularisation level by maximising the following posterior probability density 
 
+\begin{equation}\label{equ:posterior}
+    P(\lambda_{\rm{s}},\bmath \eta\,|\,\bmath d,\mathbf
+      R_{\rm{s}})=\frac{P(\bmath d\,|\,\lambda_{\rm{s}},\bmath \eta,\mathbf
+      R_{\rm{s}})P(\lambda_{\rm{s}},\bmath \eta)}{P(\bmath d\,|\,\mathbf
+      R_{\rm{s}})}\,.
+\end{equation}
+
+At each step of this optimisation the corresponding most probable source $\bmath s$ is obtained by maximising the following probability density distribution 
+
+\begin{equation}
+    P\left(\bmath s\,|\,\bmath d,\lambda_{\rm{s}}\bmath \eta,\mathbf R_{\rm{s}}\right)=\frac{P(\bmath d \,|\,\bmath s,\bmath \eta)\, P(\bmath s\,|\,\lambda_{\rm{s}},\mathbf R_{\rm{s}})}{P(\bmath     d \,|\,\lambda_{\rm{s}},\bmath \eta,\mathbf R_{\rm{s}})}\,.
+   \label{eq:evidence} 
+ \end{equation}
+
+Then, we use this as a fix starting point to parametrise the surface brightness of the lens galaxy as a sum of two or more elliptical Sersic profiles and optimize for the best parameters. In the third and last step we optimise simultaneously for the mass and the light distribution of the deflector found in the previous steps.
+
+
+
+ In this work we use an opposite strategy which develops in two steps. 
+
+We attempt for the first time a different modelling procedure. In previous works the emission from the lens galaxy was fitted for and subsequently subtracted from the original data, not to be considered further in the following modelling. In this work we use an opposite strategy in two steps. We first mask out the emission from the lens galaxy to proceed with the modelling of the lensed images to find the best preliminary lens model. We then use this as a fix starting model while we parametrise the surface brightness of the lens galaxy as a sum of elliptical Sersic profiles. In the third and last step we optimise simultaneously for the mass and the light distribution of the deflector.
+
+The lens modelling of each system was performed using the Bayesian pixelated technique developed by \citet{V09} \citep[see also][]{V14a} and we refer to this paper for a more detailed discussion. Briefly, the mass density distribution of the lens is parametrised with an elliptical power-law profile (plus external shear) with a total of eight free parameters. The surface brightness distribution of the lens is parametrised using elliptical Sersic profiles and unlike in \citet{V09}  it is simultaneously modelled with the lens mass distribution. The surface brightness distribution on the un-lensed background source is instead reconstructed using a Delaunay tessellation which is adaptive with the magnification.
 
 \begin{table*}
 \caption{Add caption here.}
@@ -119,7 +143,7 @@ As can be seen in figure \ref{plots}, some of our models present quite a few res
 
 Furthermore our prior on the source regularisation changes according to the specific system. In some cases a correlation between the pixels is needed in the regin outside the mask to achieve a better modelling: the regularisation matrix is therefore no longer diagonal.
 
-\section
+\section{ccc}
 
 \section{Discussion}
 %A recent update has been implemented: the emission coming from the Sersic fitting in each pixel of the lens plane is included in the matrix with the lens potential components and therefore we otimise for both the mass and brightness distribution of the lens galaxy simultaneously.
