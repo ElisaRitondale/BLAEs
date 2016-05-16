@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2014.5.25)  16 MAY 2016 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2014.5.25)  16 MAY 2016 16:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -742,20 +742,14 @@ LaTeX Font Info:    Redeclaring math symbol \Bbbk on input line 261.
 LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
 LaTeX Font Info:    Redeclaring math symbol \backepsilon on input line 265.
 )
-(./Texpaper.aux
-
-LaTeX Warning: Label `firstpage' multiply defined.
-
-
-LaTeX Warning: Label `fig:J0252_smooth' multiply defined.
-
-)
+(./Texpaper.aux)
 \openout1 = `Texpaper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 49.
 LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 49
 .
- (/usr/local/texlive/2014/texmf-dist/tex/latex/newtx/omlntxmi.fd
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2012/03/22 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 49.
@@ -923,63 +917,85 @@ LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
 LaTeX Font Info:    Font shape `T1/ntxrx/m/n' will be
 (Font)              scaled to size 9.0pt on input line 67.
 
-Underfull \hbox (badness 4846) in paragraph at lines 77--79
-\T1/aer/m/n/9 The lens mod-elling of each sys-tem was per-formed
+LaTeX Warning: Reference `tab:sample' on page 1 undefined on input line 72.
+
+
+LaTeX Warning: Reference `fig:sample' on page 1 undefined on input line 74.
+
+
+Underfull \hbox (badness 3148) in paragraph at lines 74--75
+[]\T1/aer/m/n/9 The data were re-trieved from the \T1/aer/m/it/9 HST \T1/aer/m/
+n/9 archive
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 77--79
-\T1/aer/m/n/9 us-ing the Bayesian pix-e-lated tech-nique de-vel-oped by
+Underfull \hbox (badness 2903) in paragraph at lines 74--75
+\T1/aer/m/n/9 and pro-cessed us-ing the \T1/aer/m/sc/9 as-tro-driz-zle \T1/aer/
+m/n/9 task that is
  []
 
 
-Underfull \vbox (badness 4013) has occurred while \output is active []
+Underfull \hbox (badness 2096) in paragraph at lines 74--75
+\T1/aer/m/n/9 part of the \T1/aer/m/sc/9 driz-zlepac \T1/aer/m/n/9 pack-age. Cu
+t-out im-ages for
+ []
 
 
+Underfull \hbox (badness 1983) in paragraph at lines 74--75
+\T1/aer/m/n/9 one can-di-dates, three turned out not to be grav-i-ta-
+ []
 
-LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 79.
 
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 79.
-LaTeX Font Info:    No file TS1aer.fd. on input line 79.
+LaTeX Warning: Reference `firstpage' on page 1 undefined on input line 75.
+
+
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 75.
+
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 75.
+LaTeX Font Info:    No file TS1aer.fd. on input line 75.
 
 LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textcopyright' on input line 79.
+(Font)              for symbol `textcopyright' on input line 75.
 
 [1
 
 
 ]
+
+Package natbib Warning: Citation `V09' on page 2 undefined on input line 89.
+
 LaTeX Font Info:    Font shape `T1/ntxrx/b/n' in size <9> not available
-(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 102.
+(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 107.
 
 LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
-(Font)              scaled to size 9.0pt on input line 102.
+(Font)              scaled to size 9.0pt on input line 107.
 LaTeX Font Info:    Font shape `T1/ntxrx/b/n' in size <7.3> not available
-(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 102.
+(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 107.
 
 LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
-(Font)              scaled to size 7.3pt on input line 102.
+(Font)              scaled to size 7.3pt on input line 107.
 LaTeX Font Info:    Font shape `T1/ntxrx/b/n' in size <5.5> not available
-(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 102.
+(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 107.
 
 LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
-(Font)              scaled to size 5.5pt on input line 102.
+(Font)              scaled to size 5.5pt on input line 107.
 
-Underfull \hbox (badness 5147) in paragraph at lines 102--103
-\T1/aer/m/n/9 back-ground source is in-stead re-con-structed us-ing a
- []
+Package natbib Warning: Citation `V09' on page 2 undefined on input line 107.
+
+
+Package natbib Warning: Citation `V14a' on page 2 undefined on input line 107.
 
 LaTeX Font Info:    Font shape `T1/ntxrx/b/n' in size <8> not available
-(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 122.
+(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 125.
 
 LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
-(Font)              scaled to size 8.0pt on input line 122.
+(Font)              scaled to size 8.0pt on input line 125.
 LaTeX Font Info:    Font shape `T1/ntxrx/b/n' in size <6.2> not available
-(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 122.
+(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 125.
 
 LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
-(Font)              scaled to size 6.2pt on input line 122.
+(Font)              scaled to size 6.2pt on input line 125.
 File: fig1a.ps Graphic file (type eps)
 <fig1a.ps>
 File: fig1e.ps Graphic file (type eps)
@@ -997,40 +1013,65 @@ File: fig1r.ps Graphic file (type eps)
 File: fig1s.ps Graphic file (type eps)
 
 <fig1s.ps> (./Texpaper.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 762.
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 765.
+
+LaTeX Warning: Reference `firstpage' on page 2 undefined on input line 765.
 
 
-LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 762.
+LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 765.
 
 [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 762.
+LaTeX Warning: Reference `firstpage' on page 3 undefined on input line 765.
+
+
+LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 765.
 
 [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 762.
+LaTeX Warning: Reference `firstpage' on page 4 undefined on input line 765.
+
+
+LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 765.
 
 [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 762.
+LaTeX Warning: Reference `firstpage' on page 5 undefined on input line 765.
+
+
+LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 765.
 
 [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 762.
- (./Texpaper.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 762.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 762.
-Package rerunfilecheck Info: File `Texpaper.out' has not changed.
-(rerunfilecheck)             Checksum: 4EFF6755685F15CE46272C3717236869;222.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 765.
+ (./Texpaper.aux
 
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 765.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 765.
+
+
+Package rerunfilecheck Warning: File `Texpaper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Texpaper.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  AA9574B409C5988A8A15C0DC9A805AE8;230.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -1042,21 +1083,21 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 762.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 765.
  )
-(\end occurred when \iftrue on line 186 was incomplete)
-(\end occurred when \iftrue on line 175 was incomplete)
-(\end occurred when \iftrue on line 159 was incomplete)
-(\end occurred when \iftrue on line 146 was incomplete) 
+(\end occurred when \iftrue on line 189 was incomplete)
+(\end occurred when \iftrue on line 178 was incomplete)
+(\end occurred when \iftrue on line 162 was incomplete)
+(\end occurred when \iftrue on line 149 was incomplete) 
 Here is how much of TeX's memory you used:
- 8998 strings out of 493118
- 125526 string characters out of 6135459
- 226147 words of memory out of 5000000
- 12279 multiletter control sequences out of 15000+600000
- 89363 words of font info for 148 fonts, out of 8000000 for 9000
+ 8996 strings out of 493118
+ 125513 string characters out of 6135459
+ 221341 words of memory out of 5000000
+ 12276 multiletter control sequences out of 15000+600000
+ 91023 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,16n,34p,1711b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Texpaper.dvi (5 pages, 27196 bytes).
+Output written on Texpaper.dvi (5 pages, 25996 bytes).
