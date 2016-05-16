@@ -25,7 +25,7 @@
 % overwriting existing commands. Example:
 %\newcommand{\pcm}{\,cm$^{-2}$}	% per cm-squared
 
-\title[Short title]{Title}
+\title[BLAEs -- I.]{BLAEs -- I. Super-resolving normal Lyman alpha emitting galaxies between redshift 2 to 3 with gravitational lensing}
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
@@ -69,11 +69,10 @@ Strong gravitational lensing can be used to overcome this limitation, but the di
 
 \section{Observations}
 
-The BLAEs sample was observed with the {\it Hubble Space Telescope} ({\it HST}) using the WFC3 camera and the F606W filter between 2015 November and 2016 May (GO: 14189; PI: Bolton). In total, twenty one candidate gravitationally lensed Lyman-alpha emitting galaxies were observed for about 2500~s each. As their redshifts span from $z \sim 2$ to 3, these observations probed the rest-frame ultraviolet emission between 1500 and 2000~\AA. The details of the sample and the observations are given in Table~\ref{tab:sample}.
+The BLAEs sample was observed with the {\it Hubble Space Telescope} ({\it HST}) using the WFC3 camera and the F606W filter between 2015 November and 2016 May (GO: 14189; PI: Bolton). In total, twenty one candidate gravitationally lensed Lyman-alpha emitting galaxies from the \citet{Shu16} sample were observed for about 2500~s each. As their redshifts span from $z \sim 2$ to 3, these observations probed the rest-frame ultraviolet emission between 1500 and 2000~\AA.
 
-The data were retrieved from the {\it HST} archive and processed using the {\sc astrodrizzle} task that is part of the {\sc drizzlepac} package. Cut-out images for each target are shown in Fig.~\ref{fig:sample}. Out of the twenty one candidates, three turned out not to be gravitational lenses (SDSS~J0054+2944, SDSS~J1116+0915 and SDSS~J1516+4954). SDSS~J2245+0040 is not included in our final sample because the uncertain nature of the deflector, which appears to be a spiral galaxy, made identifying the lensed Lyman alpha emission difficult without additional colour information. Therefore, the final BLAEs sample used for our analysis contains seventeen gravitationally lensed Lyman-alpha emitting galaxies.
+The data were retrieved from the {\it HST} archive and processed using the {\sc astrodrizzle} task that is part of the {\sc drizzlepac} package. Cut-out images for each target are shown in Fig.~\ref{fig:sample}. Out of the twenty one candidates, three turned out not to be strong gravitational lenses with clear multiple images of the same background galaxy (SDSS~J0054+2944, SDSS~J1116+0915 and SDSS~J1516+4954). Also, SDSS~J2245+0040 is not included in our final sample because the uncertain nature of the deflector, which appears to be a spiral galaxy, made identifying the emission from the lensed Lyman alpha emitting galaxy challenging without additional colour information. Therefore, the final BLAEs sample used for our analysis contains seventeen gravitationally lensed Lyman-alpha emitting galaxies. The details of the sources in our final sample and the {\it HST} data that we will use are given in Table~\ref{tbl:list}.
 
-<<<<<<< HEAD
 \begin{figure*}
 \begin{center} 
 \includegraphics[width=\textwidth]{sample.pdf}
@@ -81,15 +80,7 @@ The data were retrieved from the {\it HST} archive and processed using the {\sc 
 \label{fig:sample}
 \end{center}     
  \end{figure*}
-=======
-%\begin{figure*}
-%\begin{center} 
-%\includegraphics[width=\textwidth]{sample.pdf}
-%\caption{The WFC3 F606W imaging with the {\it HST} of each candidate gravitational lens. The cut-outs are $4\times4$ arcsec$^2$ is area, and the surface brightness scale is in AB magnitudes~arcsec$^{-2}$. {\bf Names and redshifts to be added.}}
-%\label{fig:sample}
-%\end{center}     
-% \end{figure*}
->>>>>>> origin/master
+
 
 %Optical data as the considered sample, can allow us to detect substructures with mass in the range $10^7 - 10^8 M_{\odot}$ given their resolution; lower mass substructures can be detected using interferometric data that can take advantage of a higher resolution.
 %The nature of the lensed galaxies is carefully selected to increase our sensitivity to the presence of substructures. Lyman-alpha emitters (LAEs) consist of inhomogeneous distribution of star forming knots and are often composed by distinct (components) units merging into one object. Given their structure, they present an extremely lumpy and discontinuous brightness profile which we can exploit to enhance the capability of identifying a substructure, as follows. Provided that the latter is located in the lens galaxy main halo and in correspondence of the Einstein ring, its presence would lead to a distortion in the brightness distribution of the lensed images. This local brightness perturbation will be more evident the more lumpy is the original unperturbed brightness profile in the same way changes in the positions of bricks in a wall are more easily identified if neighbouring bricks are differently coloured.
@@ -105,11 +96,11 @@ where $\kappa$ is the dimensionless surface mass density (as a function of posit
 R_{\rm{ein}} = \left ( \frac{\kappa_0 \left ( 2 - \frac{\gamma}{2} \right ) q^{\left ( \gamma - 2 \right )/2}}{3 - \gamma} \right )^{1/\left ( \gamma - 1 \right )}\,.
 \end{equation}
 
-The surface brightness distribution of the foreground gravitational lens is simultaneously modelled with the mass distribution and is parametrised using elliptical Sersic profiles 
+The surface brightness distribution of the foreground gravitational lens is simultaneously modelled with the mass distribution and is parametrised using elliptical Sersic profiles given by,
 \begin{equation}
 I \left ( r \right ) = I_0 \exp \left [  \left (  - bn  \left (  \frac{r}{R_e} \right ) ^ {1/n} \right )  - 1.0   \right ]\,,
 \end{equation}
-where $I(r)$ is the surface brightness at radius $r$, $I_0$ is the surface brightness normalization, $R_{e}$ is the effective radius, $n$ is the Sersic index and $b$ is ??.
+where $I(r)$ is the surface brightness at radius $r$, $I_0$ is the surface brightness normalization, $R_{e}$ is the effective radius, $n$ is the Sersic index and $b$ is the axial ratio.
 %\begin{equation}
 %r = \sqrt{q_l^2  x_l ^2 + y_l ^2}\,.
 %\end{equation}
@@ -123,15 +114,15 @@ The modelling procedure is performed in two steps: first we masked out the emiss
       R_{\rm{s}})P(\lambda_{\rm{s}},\bmath \eta)}{P(\bmath d\,|\,\mathbf
       R_{\rm{s}})}\,.
 \end{equation}
-At each step of this optimization, the corresponding most probable source $\bmath s$ is obtained by maximising the probability density distribution 
+At each step of this optimization, the corresponding most probable source $\bmath s$ is obtained by maximising the probability density distribution,
 \begin{equation}
     P\left(\bmath s\,|\,\bmath d,\lambda_{\rm{s}}\bmath \eta,\mathbf R_{\rm{s}}\right)=\frac{P(\bmath d \,|\,\bmath s,\bmath \eta)\, P(\bmath s\,|\,\lambda_{\rm{s}},\mathbf R_{\rm{s}})}{P(\bmath     d \,|\,\lambda_{\rm{s}},\bmath \eta,\mathbf R_{\rm{s}})}\,.
    \label{eq:evidence} 
  \end{equation}
-Then, using this as a starting point, we parametrise the surface brightness distribution of the lens galaxy as a sum of multiple elliptical Sersic profiles, and optimise for the corresponding parameters, $\bmath \eta_l =\{....\}$ together with the background source surface brightness distribution. In the third and last step, we optimise simultaneously for the mass and the light distribution of the deflector and the source regularisation level.
+Then, using this as a starting point, we parametrise the surface brightness distribution of the lens galaxy as a sum of multiple elliptical Sersic profiles, and optimise for the corresponding parameters, $\bmath \eta_l =\{I_0, R_e, n, b, \theta\}$ together with the background source surface brightness distribution. In the third and last step, we optimise simultaneously for the mass and the light distribution of the deflector and the source regularisation level.
 
 \begin{table*}
-\caption{Add caption here.}
+\caption{Details of the BLAEs sample used for our analysis and the derived gravitational lens mass models.}
 \begin{tabular}{cccc}
 \hline
  Name (SDSS) &$\rm{z_{lens}}$&$\rm{z_{src}}$&$\rm{R_{ein}}$[arcsec]\\
