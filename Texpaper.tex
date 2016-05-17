@@ -25,7 +25,7 @@
 % overwriting existing commands. Example:
 %\newcommand{\pcm}{\,cm$^{-2}$}	% per cm-squared
 
-\title[BLAEs -- I.]{BLAEs -- I. Super-resolving normal Lyman alpha emitting galaxies between redshift 2 to 3 with gravitational lensing}
+\title[BLAEs -- I.]{BLAEs -- I. Resolving the UV-continuum emission in Lyman alpha emitting galaxies between redshift 2 to 3 with gravitational lensing}
 
 % The list of authors, and the short list which is used in the headers.
 % If you need two or more lines of authors, add an extra line using \newauthor
@@ -69,14 +69,14 @@ Strong gravitational lensing can be used to overcome this limitation, but the di
 
 \section{Observations}
 
-The BLAEs sample was observed with the {\it Hubble Space Telescope} ({\it HST}) using the WFC3 camera and the F606W filter between 2015 November and 2016 May (GO: 14189; PI: Bolton). In total, twenty one candidate gravitationally lensed Lyman-alpha emitting galaxies from the \citet{Shu16} sample were observed for about 2500~s each. As their redshifts span from $z \sim 2$ to 3, these observations probed the rest-frame ultraviolet emission between 1500 and 2000~\AA.
+The BLAEs sample was observed with the {\it Hubble Space Telescope} ({\it HST}) using the WFC3 camera and the F606W filter ($\lambda_c = 5887$ \AA; $\Delta\lambda = 2182$~\AA) between 2015 November and 2016 May (GO: 14189; PI: Bolton). In total, twenty one candidate gravitationally lensed Lyman-alpha emitting galaxies from the \citet{Shu16} sample were observed for about 2600~s each. As their redshifts span from $z \sim 2.1$ to 2.8 and given the transmission curve of the F606W filter, these observations probed the rest-frame ultraviolet emission from young massive stars between 1250 and 2230~\AA.
 
 The data were retrieved from the {\it HST} archive and processed using the {\sc astrodrizzle} task that is part of the {\sc drizzlepac} package. Cut-out images for each target are shown in Fig.~\ref{fig:sample}. Out of the twenty one candidates, three turned out not to be strong gravitational lenses with clear multiple images of the same background galaxy (SDSS~J0054+2944, SDSS~J1116+0915 and SDSS~J1516+4954). Also, SDSS~J2245+0040 is not included in our final sample because the uncertain nature of the deflector, which appears to be a spiral galaxy, made identifying the emission from the lensed Lyman alpha emitting galaxy challenging without additional colour information. Therefore, the final BLAEs sample used for our analysis contains seventeen gravitationally lensed Lyman-alpha emitting galaxies. The details of the sources in our final sample and the {\it HST} data that we will use are given in Table~\ref{tbl:list}.
 
 \begin{figure*}
 \begin{center} 
 \includegraphics[width=\textwidth]{sample.pdf}
-\caption{The WFC3 F606W imaging with the {\it HST} of each candidate gravitational lens. The cut-outs are $4\times4$ arcsec$^2$ is area, and the surface brightness scale is in AB magnitudes~arcsec$^{-2}$. {\bf Names and redshifts to be added.}}
+\caption{The WFC3 F606W imaging with the {\it HST} of each candidate gravitational lens. The cut-outs are $8\times8$ arcsec$^2$ in area, and the surface brightness scale is in AB magnitudes~arcsec$^{-2}$. {\bf Names and redshifts to be added.}}
 \label{fig:sample}
 \end{center}     
  \end{figure*}
@@ -123,27 +123,27 @@ Then, using this as a starting point, we parametrise the surface brightness dist
 
 \begin{table*}
 \caption{Details of the BLAEs sample used for our analysis and the derived gravitational lens mass models.}
-\begin{tabular}{cccc}
+\begin{tabular}{cccccc}
 \hline
- Name (SDSS) &$\rm{z_{lens}}$&$\rm{z_{src}}$&$\rm{R_{ein}}$[arcsec]\\
+ Name (SDSS) 	&$\rm{z_{lens}}$	&$\rm{z_{src}}$		& $\lambda_{\rm rest}$ [\AA]		&Exp. Time [$s$]	&$R_{\rm ein}$ [arcsec]\\
  \hline
-$\rm{J0029+2544}$&0.587&2.450\\
-$\rm{J0113+0250}$&0.623&2.609\\
-$\rm{J0201+3228}$&0.396&2.821\\
-$\rm{J0237-0641}$&0.486&2.249\\
-$\rm{J0742+3341}$&0.494&2.363\\
-$\rm{J0755+3445}$&0.722&2.634\\
-$\rm{J0856+2010}$&0.507&2.233\\
-$\rm{J0918+4518}$&0.524&2.344\\
-$\rm{J0918+5104}$&0.581&2.403\\
-$\rm{J1110+2808}$&0.607&2.399\\
-$\rm{J1110+3649}$&0.733&2.502\\
-$\rm{J1141+2216}$&0.586&2.762\\
-$\rm{J1201+4743}$&0.563&2.126\\
-$\rm{J1226+5457}$&0.498&2.732\\
-$\rm{J1529+4015}$&0.531&2.792\\
-$\rm{J2228+1205}$&0.530&2.832\\
-$\rm{J2342-0120}$&0.527&2.265\\
+$\rm{J0029+2544}$		&0.587	&2.450	&1706	&2504\\
+$\rm{J0113+0250}$		&0.623	&2.609	&1631	&2484\\
+$\rm{J0201+3228}$		&0.396	&2.821	&1540	&2520\\
+$\rm{J0237-0641}$		&0.486	&2.249	&1812	&2488\\
+$\rm{J0742+3341}$		&0.494	&2.363	&1751	&2520\\
+$\rm{J0755+3445}$		&0.722	&2.634	&1620	&2520\\
+$\rm{J0856+2010}$		&0.507	&2.233	&1821	&2496\\
+$\rm{J0918+4518}$		&0.524	&2.344	&1761	&2624\\
+$\rm{J0918+5104}$		&0.581	&2.403	&1730	&2676\\
+$\rm{J1110+2808}$		&0.607	&2.399	&1732	&2504\\
+$\rm{J1110+3649}$		&0.733	&2.502	&1682	&2540\\
+$\rm{J1141+2216}$		&0.586	&2.762	&1565	&2496\\
+$\rm{J1201+4743}$		&0.563	&2.126	&1883	&2624\\
+$\rm{J1226+5457}$		&0.498	&2.732	&1578	&2676\\
+$\rm{J1529+4015}$		&0.531	&2.792	&1553	&2580\\
+$\rm{J2228+1205}$		&0.530	&2.832	&1536	&2492\\
+$\rm{J2342-0120}$		&0.527	&2.265	&1803	&2484\\
  \hline
 \end{tabular}
 \label{tbl:list} 

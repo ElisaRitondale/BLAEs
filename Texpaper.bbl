@@ -17,6 +17,11 @@
   {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
   mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
 
+\bibitem[\protect\citeauthoryear{{Shu} et~al.,}{{Shu} et~al.}{2016}]{Shu16}
+{Shu} Y.,  et~al., 2016, preprint, \href
+  {http://adsabs.harvard.edu/abs/2016arXiv160401842S} {} (\mn@eprint {arXiv}
+  {1604.01842})
+
 \bibitem[\protect\citeauthoryear{{Vegetti} \& {Koopmans}}{{Vegetti} \&
   {Koopmans}}{2009}]{V09}
 {Vegetti} S.,  {Koopmans} L.~V.~E.,  2009, \mn@doi [\mnras]
