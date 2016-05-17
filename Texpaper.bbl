@@ -17,10 +17,33 @@
   {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
   mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
 
-\bibitem[\protect\citeauthoryear{{Shu} et~al.,}{{Shu} et~al.}{2016}]{Shu16}
-{Shu} Y.,  et~al., 2016, preprint, \href
+\bibitem[\protect\citeauthoryear{{Auger}, {Treu}, {Bolton}, {Gavazzi},
+  {Koopmans}, {Marshall}, {Bundy}  \& {Moustakas}}{{Auger}
+  et~al.}{2009}]{auger09}
+{Auger} M.~W.,  {Treu} T.,  {Bolton} A.~S.,  {Gavazzi} R.,  {Koopmans}
+  L.~V.~E.,  {Marshall} P.~J.,  {Bundy} K.,   {Moustakas} L.~A.,  2009, \mn@doi
+  [\apj] {10.1088/0004-637X/705/2/1099}, \href
+  {http://adsabs.harvard.edu/abs/2009ApJ...705.1099A} {705, 1099}
+
+\bibitem[\protect\citeauthoryear{{Bolton}, {Burles}, {Koopmans}, {Treu},
+  {Gavazzi}, {Moustakas}, {Wayth}  \& {Schlegel}}{{Bolton}
+  et~al.}{2008}]{bolton08}
+{Bolton} A.~S.,  {Burles} S.,  {Koopmans} L.~V.~E.,  {Treu} T.,  {Gavazzi} R.,
+  {Moustakas} L.~A.,  {Wayth} R.,   {Schlegel} D.~J.,  2008, \mn@doi [\apj]
+  {10.1086/589327}, \href {http://adsabs.harvard.edu/abs/2008ApJ...682..964B}
+  {682, 964}
+
+\bibitem[\protect\citeauthoryear{{Shu} et~al.,}{{Shu} et~al.}{2016a}]{Shu16}
+{Shu} Y.,  et~al., 2016a, preprint, \href
   {http://adsabs.harvard.edu/abs/2016arXiv160401842S} {} (\mn@eprint {arXiv}
   {1604.01842})
+
+\bibitem[\protect\citeauthoryear{{Shu}, {Bolton}, {Moustakas}, {Stern}, {Dey},
+  {Brownstein}, {Burles}  \& {Spinrad}}{{Shu} et~al.}{2016b}]{Shu16a}
+{Shu} Y.,  {Bolton} A.~S.,  {Moustakas} L.~A.,  {Stern} D.,  {Dey} A.,
+  {Brownstein} J.~R.,  {Burles} S.,   {Spinrad} H.,  2016b, \mn@doi [\apj]
+  {10.3847/0004-637X/820/1/43}, \href
+  {http://adsabs.harvard.edu/abs/2016ApJ...820...43S} {820, 43}
 
 \bibitem[\protect\citeauthoryear{{Vegetti} \& {Koopmans}}{{Vegetti} \&
   {Koopmans}}{2009}]{V09}
