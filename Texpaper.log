@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2014.5.25)  18 MAY 2016 17:56
-=======
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.5)  18 MAY 2016 00:38
->>>>>>> origin/master
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.5)  19 MAY 2016 15:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -751,9 +747,6 @@ LaTeX Font Info:    Redeclaring math symbol \Bbbk on input line 261.
 LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
 LaTeX Font Info:    Redeclaring math symbol \backepsilon on input line 265.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/times.sty
-Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
 LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 49
 .
 
@@ -963,81 +956,59 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <8> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 73.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 74.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 73.
+(Font)              scaled to size 8.0pt on input line 74.
 
 
-LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 73.
+LaTeX Warning: Reference `lastpage' on page 1 undefined on input line 74.
 
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 7
-3.
+4.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 73.
+(Font)              scaled to size 8.0pt on input line 74.
  [1
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 79.
+(Font)              scaled to size 9.0pt on input line 80.
 File: sample.ps Graphic file (type eps)
-<<<<<<< HEAD
-<sample.ps>
-
-LaTeX Warning: Float too large for page by 70.78246pt on input line 82.
-
-LaTeX Font Info:    Font shape `T1/ntxrx/b/n' in size <9> not available
-(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 91.
-LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
-(Font)              scaled to size 9.0pt on input line 91.
-LaTeX Font Info:    Font shape `T1/ntxrx/b/n' in size <7.3> not available
-(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 91.
-LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
-(Font)              scaled to size 7.3pt on input line 91.
-LaTeX Font Info:    Font shape `T1/ntxrx/b/n' in size <5.5> not available
-(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 91.
-LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
-(Font)              scaled to size 5.5pt on input line 91.
-
-Underfull \hbox (badness 1097) in paragraph at lines 90--94
-\T1/aer/m/n/9 tion of each sys-tem was per-formed us-ing a new ver-
- []
-
-LaTeX Font Info:    Font shape `T1/ntxrx/b/n' in size <8> not available
-(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 137.
-
-LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
-(Font)              scaled to size 8.0pt on input line 137.
-LaTeX Font Info:    Font shape `T1/ntxrx/b/n' in size <6.2> not available
-(Font)              Font shape `T1/ntxrx/bx/n' tried instead on input line 137.
-
-LaTeX Font Info:    Font shape `T1/ntxrx/bx/n' will be
-(Font)              scaled to size 6.2pt on input line 137.
-=======
 
 <sample.ps>
 
-LaTeX Warning: Float too large for page by 80.96257pt on input line 87.
+LaTeX Warning: Float too large for page by 80.96257pt on input line 88.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.3pt on input line 116.
+(Font)              scaled to size 7.3pt on input line 102.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 5.5pt on input line 116.
+(Font)              scaled to size 5.5pt on input line 102.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 146.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 146.
+
+LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 146.
+
+[2]
+
+LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 146.
+
+[3]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 6.2pt on input line 138.
->>>>>>> origin/master
+(Font)              scaled to size 6.2pt on input line 151.
 File: fig1a.ps Graphic file (type eps)
-<fig1a.ps>
+ <fig1a.ps>
 File: fig1c.ps Graphic file (type eps)
  <fig1c.ps>
 File: fig2a.ps Graphic file (type eps)
  <fig2a.ps>
 File: fig2b.ps Graphic file (type eps)
  <fig2b.ps>
-Underfull \hbox (badness 10000) in paragraph at lines 197--200
+Underfull \hbox (badness 10000) in paragraph at lines 211--214
 [][]
  []
 
@@ -1047,12 +1018,12 @@ File: fig3b.ps Graphic file (type eps)
  <fig3b.ps>
 File: fig3c.ps Graphic file (type eps)
  <fig3c.ps>
-Underfull \hbox (badness 10000) in paragraph at lines 206--209
+Underfull \hbox (badness 10000) in paragraph at lines 220--223
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--209
+Underfull \hbox (badness 10000) in paragraph at lines 220--223
 []
  []
 
@@ -1062,12 +1033,12 @@ File: fig4b.ps Graphic file (type eps)
  <fig4b.ps>
 File: fig4c.ps Graphic file (type eps)
  <fig4c.ps>
-Underfull \hbox (badness 10000) in paragraph at lines 215--218
+Underfull \hbox (badness 10000) in paragraph at lines 229--232
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--218
+Underfull \hbox (badness 10000) in paragraph at lines 229--232
 []
  []
 
@@ -1077,12 +1048,12 @@ File: fig5b.ps Graphic file (type eps)
  <fig5b.ps>
 File: fig5c.ps Graphic file (type eps)
  <fig5c.ps>
-Underfull \hbox (badness 10000) in paragraph at lines 224--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--241
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--241
 []
  []
 
@@ -1090,7 +1061,7 @@ File: fig6a.ps Graphic file (type eps)
 <fig6a.ps>
 File: fig6b.ps Graphic file (type eps)
  <fig6b.ps>
-Underfull \hbox (badness 10000) in paragraph at lines 233--235
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
 [][]
  []
 
@@ -1098,96 +1069,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--235
 
 Package hyperref Warning: Suppressing empty link on input line 38.
 
-<<<<<<< HEAD
-LaTeX Font Info:    Try loading font information for T1+aett on input line 23.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/ae/t1aett.fd
+LaTeX Font Info:    Try loading font information for T1+aett on input line 39.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 815.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 831.
 
 
-LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 815.
+LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 831.
 
-[2]
+[4
 
-LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 815.
-=======
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 39.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 42.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 42.
-
-
-LaTeX Warning: Reference `lastpage' on page 2 undefined on input line 42.
-
-[2]
-
-LaTeX Warning: Reference `lastpage' on page 3 undefined on input line 42.
->>>>>>> origin/master
-
-[3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 816.
-
-
-<<<<<<< HEAD
-LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 815.
-=======
-LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 816.
->>>>>>> origin/master
-
-[4]
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-<<<<<<< HEAD
-LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 815.
-=======
-LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 816.
->>>>>>> origin/master
+LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 831.
 
 [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-<<<<<<< HEAD
-LaTeX Warning: Reference `lastpage' on page 6 undefined on input line 815.
-=======
-LaTeX Warning: Reference `lastpage' on page 6 undefined on input line 816.
->>>>>>> origin/master
+LaTeX Warning: Reference `lastpage' on page 6 undefined on input line 831.
 
 [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-<<<<<<< HEAD
-LaTeX Warning: Reference `lastpage' on page 7 undefined on input line 815.
+LaTeX Warning: Reference `lastpage' on page 7 undefined on input line 831.
 
 [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 815.
- (./Texpaper.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 815.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 815.
-Package rerunfilecheck Info: File `Texpaper.out' has not changed.
-(rerunfilecheck)             Checksum: 7C3482A3758E9FC4089A4A81C8CB59DD;225.
-=======
-LaTeX Warning: Reference `lastpage' on page 7 undefined on input line 816.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 816.
+
+
+LaTeX Warning: Reference `lastpage' on page 8 undefined on input line 831.
+
+[8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 831.
  (./Texpaper.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 816.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 816.
->>>>>>> origin/master
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 831.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 831.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1199,39 +1124,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-<<<<<<< HEAD
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 815.
- )
-(\end occurred when \iftrue on line 240 was incomplete)
-(\end occurred when \iftrue on line 231 was incomplete)
-(\end occurred when \iftrue on line 221 was incomplete)
-(\end occurred when \iftrue on line 211 was incomplete)
-(\end occurred when \iftrue on line 201 was incomplete)
-(\end occurred when \iftrue on line 191 was incomplete)
-(\end occurred when \iftrue on line 176 was incomplete)
-(\end occurred when \iftrue on line 163 was incomplete)
-(\end occurred when \iftrue on line 82 was incomplete) 
-Here is how much of TeX's memory you used:
- 9048 strings out of 493118
- 126182 string characters out of 6135459
- 236134 words of memory out of 5000000
- 12316 multiletter control sequences out of 15000+600000
- 91345 words of font info for 150 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 36i,16n,34p,1711b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on Texpaper.dvi (7 pages, 39648 bytes).
-=======
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 816.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 831.
  ) 
 Here is how much of TeX's memory you used:
- 12232 strings out of 493706
- 168317 string characters out of 6145769
- 253873 words of memory out of 5000000
- 15379 multiletter control sequences out of 15000+600000
+ 12220 strings out of 493706
+ 168082 string characters out of 6145769
+ 245751 words of memory out of 5000000
+ 15370 multiletter control sequences out of 15000+600000
  109807 words of font info for 155 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 36i,15n,45p,1711b,508s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,15n,45p,1711b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Texpaper.pdf (7 pages).
->>>>>>> origin/master
+Output written on Texpaper.pdf (8 pages).
